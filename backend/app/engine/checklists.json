@@ -1,0 +1,59 @@
+{
+  "_about": "Predefined review checklists. These are procedural prompts for a decision-support prototype, not medical instructions. Replace them with your mission's approved health procedures.",
+  "CL-HR-01": {
+    "title": "Heart-rate change review",
+    "steps": [
+      "Confirm the sensor is worn correctly and the device reports good signal quality.",
+      "Repeat the heart-rate measurement after 5 minutes of rest.",
+      "Check the timeline for recent exercise, EVA preparation or high-workload tasks.",
+      "Record how you feel in a daily check-in (include notes).",
+      "If the change persists, report it to mission control / the crew medical officer per mission protocol."
+    ]
+  },
+  "CL-SPO2-01": {
+    "title": "Blood-oxygen reading review",
+    "steps": [
+      "Check sensor placement and that the reading is not affected by movement or cold hands.",
+      "Repeat the SpO₂ measurement at rest.",
+      "Check the cabin environment status display (CO₂ / ventilation) for this module.",
+      "Report persistent changes to mission control per mission protocol."
+    ]
+  },
+  "CL-TEMP-01": {
+    "title": "Body-temperature change review",
+    "steps": [
+      "Confirm the measurement method and sensor contact.",
+      "Repeat the measurement after 15 minutes at rest away from exercise equipment.",
+      "Check cabin temperature for your current module.",
+      "Note any symptoms in a daily check-in and report persistent changes per mission protocol."
+    ]
+  },
+  "CL-SLEEP-01": {
+    "title": "Sleep-disruption review",
+    "steps": [
+      "Review the last sleep periods against the scheduled sleep window.",
+      "Check crew quarters for light, noise and temperature issues.",
+      "Review the schedule for upcoming critical tasks that may need adjustment.",
+      "Discuss sleep with mission control / the crew medical officer per mission protocol."
+    ]
+  },
+  "CL-FATIGUE-01": {
+    "title": "Fatigue increase review",
+    "steps": [
+      "Complete a daily check-in describing workload and how you feel.",
+      "Review recent workload and rest periods on the mission timeline.",
+      "Consider whether safety-critical tasks should be double-checked by a crewmate.",
+      "Report sustained fatigue changes to mission control per mission protocol."
+    ]
+  },
+  "CL-MULTI-01": {
+    "title": "Multi-indicator pattern review",
+    "steps": [
+      "Review each affected indicator below against your personal baseline.",
+      "Repeat continuous measurements at rest and confirm sensor quality.",
+      "Complete a daily check-in with notes on sleep, workload and how you feel.",
+      "Review the upcoming timeline for safety-critical tasks.",
+      "Contact mission control / the crew medical officer and follow the mission health procedure."
+    ]
+  }
+}

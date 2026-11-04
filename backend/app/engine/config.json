@@ -1,0 +1,20 @@
+{
+  "_about": "Crew Context Engine rules. All thresholds are STATISTICAL and relative to each astronaut's own personal baseline (robust z-scores). None of them are clinical thresholds. Edit these values to tune sensitivity.",
+  "baseline": {
+    "lookback_days": 21,
+    "exclude_recent_hours": 24,
+    "min_points_continuous": 48,
+    "min_points_daily": 5
+  },
+  "robust_z_threshold": 2.5,
+  "indicators": {
+    "heart_rate":       {"direction": "up",   "recent_hours": 24, "min_recent_points": 12, "sustained_fraction": 0.6, "scale_floor": 2.0, "stale_after_hours": 6},
+    "spo2":             {"direction": "down", "recent_hours": 24, "min_recent_points": 6,  "sustained_fraction": 0.6, "scale_floor": 0.5, "stale_after_hours": 6},
+    "body_temperature": {"direction": "up",   "recent_hours": 24, "min_recent_points": 6,  "sustained_fraction": 0.6, "scale_floor": 0.1, "stale_after_hours": 6},
+    "sleep_duration":   {"direction": "down", "recent_days": 2,   "min_recent_points": 2,  "sustained_fraction": 1.0, "scale_floor": 0.25, "stale_after_hours": 40},
+    "fatigue_score":    {"direction": "up",   "recent_days": 2,   "min_recent_points": 2,  "sustained_fraction": 1.0, "scale_floor": 0.5, "stale_after_hours": 40}
+  },
+  "severity_by_indicator_count": {"1": "info", "2": "caution", "3": "warning"},
+  "duplicate_window_hours": 24,
+  "isolation_forest": {"enabled": true, "contamination": 0.1, "min_days": 10}
+}
